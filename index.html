@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réseau Social</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Réseau Social</h1>
+        <nav>
+            <a href="#" id="home-link">Accueil</a>
+            <a href="#" id="profile-link">Profil</a>
+            <a href="#" id="friends-link">Amis</a>
+            <a href="#" id="messages-link">Messages</a>
+        </nav>
+    </header>
+    <main>
+        <section id="auth-section">
+            <section id="signup-form" class="signup-form">
+                <h2>Créer un compte</h2>
+                <form>
+                    <input type="text" id="signup-username" placeholder="Nom d'utilisateur">
+                    <input type="password" id="signup-password" placeholder="Mot de passe">
+                    <input type="password" id="signup-password-confirm" placeholder="Confirmer le mot de passe">
+                    <button id="signup-button">S'inscrire</button>
+                </form>
+            </section>
+            <section id="login-form" class="login-form">
+                <h2>Se connecter</h2>
+                <form>
+                    <input type="text" id="username" placeholder="Nom d'utilisateur">
+                    <input type="password" id="password" placeholder="Mot de passe">
+                    <button id="login-button">Se connecter</button>
+                </form>
+            </section>
+        </section>
+        <section id="loggedin-section" class="hidden">
+            <section id="friends-section" class="hidden">
+                <h2>Amis</h2>
+                <ul id="friends-list"></ul>
+            </section>
+            <section class="post-form">
+                <h2>Créer une publication</h2>
+                <form>
+                    <textarea id="post-content" placeholder="Écrire quelque chose..."></textarea>
+                    <button id="post-button">Publier</button>
+                </form>
+            </section>
+            <section class="posts">
+                <h2>Publications</h2>
+                <div id="posts-container"></div>
+            </section>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
